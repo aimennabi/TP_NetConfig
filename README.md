@@ -4,18 +4,20 @@ Ce dépôt contient les fichiers pour un TP sur NETCONF/YANG proposé dans le ca
 
 #Client NETCONF
 installation les outils dans un environnment virtuel Python isolé à l’aide de virtualenv
+```
 - cd netconf-yang-lab
 - sudo apt install python3-virtualenv
 
 - virtualenv venv
 - source venv/bin/activate
-- (venv) pip install pyang ncclient Jinja2
-
+- pip install pyang ncclient Jinja2
+```
 ### Pour tester
+```
 - cd netconf-yang-lab
 - source venv/bin/activate
-- (venv) python ncclient-cisco-csr.py --host @IP
-
+- python ncclient-cisco-csr.py --host @IP
+```
 Afin de simplifier la manipulation des données et automatiser leur génération, le moteur de template Jinja sera utilisé.
 
 à l'aide de ce programme on peut créer une nouvelle interface virtuelle. Vous devez suivre le cycle de travail classique suivant pour effectuer une reconfiguration :

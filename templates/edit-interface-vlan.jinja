@@ -1,0 +1,14 @@
+<config>
+    <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+        <interface>
+            <GigabitEthernet>
+                <name>{{ ifid }}</name>
+                <encapsulation>
+                    <dot1Q>
+                        <vlan-id>{{ vlan_id }}</vlan-id>
+                    </dot1Q>
+                </encapsulation>
+            </GigabitEthernet>
+        </interface>
+    </native>
+</config>

@@ -1,0 +1,13 @@
+<config>
+    <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+        <interface>
+            <name>GigabitEthernet{{ ifid }}</name>
+            <ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip">
+                <address operation="{{ operation }}">
+                    <ip>{{ ip }}</ip>
+                    <netmask>{{ netmask }}</netmask>
+                </address>
+            </ipv4>
+        </interface>
+    </interfaces>
+</config>
